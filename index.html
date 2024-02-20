@@ -43,6 +43,13 @@
                         <p><b>Course:</b> Bachelor of Science in Information Technology</p>
                         <p><b>Birthday:</b> May 17, 2002</p>
                         <button onclick="openPDF()" id="open-pdf-btn">Open CV</button>
+
+                      </div>
+                      <div id="pdf-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closePDFModal()">&times;</span>
+                            <iframe id="pdf-iframe" style="height:550px; width:550px"></iframe>
+                        </div>
                       </div>
                     </div>
             </section>
@@ -159,10 +166,20 @@
             function redirectToAbout() {
                 window.location.href = '#about';
                 }
+
                 function openPDF() {
-                    var pdfUrl = '/design/others/MKMT-CV.pdf';
-                    window.open(pdfUrl, '_blank');
-                    }
+    var pdfUrl = '/design/others/MKMT-CV.pdf';
+    var pdfIframe = document.getElementById('pdf-iframe');
+    var pdfModal = document.getElementById('pdf-modal');
+
+    pdfIframe.src = pdfUrl;
+    pdfModal.style.display = 'block';
+}
+
+function closePDFModal() {
+    var pdfModal = document.getElementById('pdf-modal');
+    pdfModal.style.display = 'none';
+}
         </script>
     </body>
 </html>
