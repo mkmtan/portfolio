@@ -4,10 +4,12 @@
         <title>Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="design/css/main.css">
+        <script src="design/js/script.js"></script>
+        <link rel="stylesheet" href="design/css/output.css">
         <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/thumbnails/013/743/891/small_2x/white-snowflake-icon-png.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <div>
@@ -18,22 +20,26 @@
                     <span>by MKMT</span>
                   </a>
                   <nav>
+                    <audio id="myAudio" autoplay loop>
+                      <source src="design/others/music.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
                     <button onclick="darkMode()" type="button" class="toggle-btn" id="myButton">Dark Mode</button>
                   </nav>
                 </div>
               </header>
                 <section id="banner" class="banner-background">
                     <div class="inner">
-                            <h1 style="color:white;">Hello, my name is Ma. Khella</h1>
-                            <p style="color:white;">The personal portfolio of Ma. Khella<br />
-                            where you can explore her works.</p>
+                            <h1 style="color:white;" class="animated-text">Welcome to my Personal Portfolio</h1>
+                            <p style="color:white;">
+                            where you can explore my works.</p>
                             <button onclick="redirectToAbout()" type="button">See More</button>
                     </div>
                 </section>
 
             <section id="about">
+              <h2 class="text-gray-800 text-xl" style="padding-left:35px;">About Me</h2>
                     <div class="about-container">
-
                       <div class="image-container">
                         <img src="design/imgs/aboutme.png">
                       </div>
@@ -42,16 +48,104 @@
                         <h1>Hello! My name is Ma. Khella Tan. I am a student at the University of the Cordilleras.</h1>
                         <p><b>Course:</b> Bachelor of Science in Information Technology</p>
                         <p><b>Birthday:</b> May 17, 2002</p>
-                        <button onclick="openPDF()" id="open-pdf-btn">Open CV</button>
-
+                        <p><b>Place of Birth:</b> Dagupan City</p>
+                        <p><b>Age:</b> 21</p>
+                        <p><b>Gender:</b> Female</p>
+                        <p><b>Civil Status:</b> Single</p>
+                        <p><b>Ctizenship:</b> Filipino</p>
+                        <p><b>Height:</b> 5'3" / 160cm</p>
+                        <p><b>Weight:</b> 45 kgs.</p>
+                        <p><b>Language/Dialect:</b> English, Filipino (Pangasinan), Japanese</p>
                       </div>
-                      <div id="pdf-modal" class="modal">
+                      <!-- <div id="pdf-modal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closePDFModal()">&times;</span>
                             <iframe id="pdf-iframe" style="height:550px; width:550px"></iframe>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
+            </section>
+            <hr>
+            <section id="education">
+              <h2 style="margin-left: 35px;" class="text-gray-800 text-xl">Education</h2>
+              <table style="margin-left: 35px;">
+                <tr>
+                  <td><b>Undergraduate</b></td>
+                  <td style="padding-left:30px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li><b>:Bachelor of Science in Information Technology - <i>Major in Web Technology</i></b></li>
+                      <li>:University of the Cordilleras</li>
+                      <li>:Governor Pack Road, Baguio City</li>
+                      <li>:Expected Date of Graduation: October 2025</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Senior High School</b></td>
+                  <td style="padding-left:30px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li><b>:Technical-Vocational Track - Information and Communications Technology Strand - <i>Major in Animation</i></b></li><br>
+                      <li>:PHINMA-University of Pangasinan</li>
+                      <li>:Arellano St.Downtown District, Dagupan City, 2400 Pangasinan</li>
+                      <li>:April 2021</li><br>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Junior High School</b></td>
+                  <td style="padding-left:30px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li>:PHINMA-University of Pangasinan</li>
+                      <li>:Arellano St.Downtown District, Dagupan City, 2400 Pangasinan</li>
+                      <li>:March 2019</li><br>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Primary</b></td>
+                  <td style="padding-left:30px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li>:Living Lights Academy Foundation Inc.</li>
+                      <li>:Bartolome Ceralde St., Bonuan Gueset, Dagupan City, 2400 Pagasinan</li>
+                      <li>:March 2015</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <hr>
+            <section id="experience">
+              <h2 style="margin-left: 35px;" class="text-gray-800 text-xl">Experience/s</h2>
+              <table style="margin-left: 35px;">
+                <tr>
+                  <td style="padding-left:50px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li><b>Head of Graphics and Design, Multimedia Arts Club: <i>PIXELS</i></b></li>
+                      <li>Arellano St.Downtown District, Dagupan City, 2400 Pangasinan</li>
+                      <li>August 2020 - March 2021</li>
+                    </ul>
+                  </td>
+                </tr>
+                
+              </table>
+            </section>
+            <hr>
+            <section id="skills">
+              <h2 style="margin-left: 35px;">Skills</h2>
+              <table style="margin-left: 35px;">
+                <tr>
+                  <td style="padding-left:30px;">
+                    <ul style="padding: 0;">
+                      <li>- <b>Knowledgeable</b> with the Graphic Software: <i>Adobe Photoshop</i></li>
+                      <li>- <b>Has experienced</b> programming with <i>Python, C++, HTML, Java</i></li>
+                      <li>- <b>Excellent communication skills:</b> Public Speaking and Customer service</li>
+                      <li>- <b>Leadership:</b> Good at leading a group of people</li>
+                      <li>- Willingness to learn and flexible</li>
+                      <li>- Responsible</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
             </section>
             <hr>
             <section id="gallery">
@@ -98,6 +192,7 @@
             <section id="contact">
                 <div>
                     <section>
+                      <h2 style="padding-left: 30px; padding-top: 20px;">Contact Information</h2>
                         <div class="contact-method">
                             <span class="fa fa-envelope"></span>
                             <h3>Email</h3>
@@ -137,12 +232,13 @@
             <footer id="footer">
                 <center>
                 <div>
+                  <!-- <button onclick="openPDF()" id="open-pdf-btn">Open CV</button> -->
                     <ul class="icons">
                         <li><a href="https://facebook.com/RyujiToraa" class="fa fa-facebook"></a></li>
                         <li><a href="https://github.com/mkmtan" class="fa fa-github"></a></li>
                         <li><a href="https://www.linkedin.com/in/khtan17/" class="fa fa-linkedin"></a></li>
                     </ul>
-                    <ul class="icons" style="padding-top:15px;">
+                    <ul class="icons" style="padding-top:15px; margin-bottom:20px;">
                         <li>&copy; All rights reserved. </li>
                         <li>|</li>
                         <li>Ma. Khella M. Tan</li>
@@ -151,35 +247,5 @@
             </center>
             </footer>
         </div>
-
-        <script>
-            function darkMode() {
-               var element = document.body;
-               element.classList.toggle("dark-mode");
-               var button = document.getElementById("myButton");
-        if (button.innerHTML === "Light Mode") {
-            button.innerHTML = "Dark Mode";
-        } else {
-            button.innerHTML = "Light Mode";
-        }
-            }
-            function redirectToAbout() {
-                window.location.href = '#about';
-                }
-
-                function openPDF() {
-                  var pdfUrl = 'design/others/MKMT-CV.pdf';
-                  var pdfIframe = document.getElementById('pdf-iframe');
-                  var pdfModal = document.getElementById('pdf-modal');
-
-                  pdfIframe.src = pdfUrl;
-                  pdfModal.style.display = 'block';
-              }
-
-              function closePDFModal() {
-                  var pdfModal = document.getElementById('pdf-modal');
-                  pdfModal.style.display = 'none';
-              }
-        </script>
     </body>
 </html>

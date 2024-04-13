@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typography Animation</title>
+<style>
+  .animated-text {
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    animation: slideIn 2s ease-in-out infinite alternate; 
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(-10px); 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="animated-text">Hello, World!</div>
+
+</body>
+</html>
