@@ -352,7 +352,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
+<<<<<<< HEAD
   padding: 30px; 
+=======
+  padding: 30px;
+>>>>>>> ac39e1b420da1794a7b609f75f3d50d5f04653da
   border-radius: 15px; 
   max-width: 90%; 
   max-height: 90%; 
@@ -370,6 +374,7 @@ header {
     font-size: 20px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .animated-text {
   font-size: 36px;
@@ -385,3 +390,5 @@ header {
     transform: translateY(-10px); 
   }
 }
+=======
+>>>>>>> ac39e1b420da1794a7b609f75f3d50d5f04653da
